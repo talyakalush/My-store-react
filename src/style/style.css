@@ -1,0 +1,40 @@
+.h1 {
+  text-align: center;
+  font-size: "2rem";
+}
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7eadf;
+  width: 50%;
+  height: 15vh;
+  transition: transform 0.5s ease;
+  animation-name: moveImage;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes moveImage {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(50px) translateY(10px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@media (max-width: 900px) {
+  .div {
+    width: 70%;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .div {
+    width: 90%;
+  }
+}
