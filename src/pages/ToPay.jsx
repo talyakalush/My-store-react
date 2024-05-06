@@ -8,10 +8,14 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { resetCart } from "../store/Actions/cartAction.js";
 
 const ToPay = () => {
   const [shippingMethod, setShippingMethod] = useState("");
+   const dispatch = useDispatch();
   const handleToPayFinish = () => {
+        dispatch(resetCart());
     alert("Payment has been sent");
   };
   const handleChange = (event) => {
