@@ -12,7 +12,7 @@ import ROUTES from "../routes/ROUTES.js";
 import { useNavigate } from "react-router-dom";
 
 const CartPage = () => {
-  const cartItems = useSelector((state) => state.cart.cart); // גישה למערך הסל מה-store
+  const cartItems = useSelector((state) => state.cart.cart); 
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleRemoveFromCart = (uniqueId) => {
