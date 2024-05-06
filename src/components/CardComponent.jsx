@@ -83,7 +83,7 @@ const CardComponent = ({
 
       <Divider></Divider>
       <CardContent>
-        <Typography variant="body2">Price: {price}</Typography>
+        <Typography variant="body2">Price: {price}$</Typography>
         <Typography variant="body2">
           <br />
           {likes}
